@@ -40,11 +40,11 @@ const Footer = () => {
                     <ul className="space-y-3 text-sm">
                         <li className="flex items-center gap-3">
                             <FaPhoneAlt className="text-[#1c9d36]" />
-                            +91 8979239430
+                            +91 9810857534
                         </li>
                         <li className="flex items-center gap-3">
                             <FaEnvelope className="text-[#1c9d36]" />
-                            info@medicare.com
+                            info@medicaresystem.in
                         </li>
                     </ul>
                 </div>
@@ -55,15 +55,34 @@ const Footer = () => {
                     </h2>
 
                     <div className="flex gap-4">
-                        <div className="bg-white/10 p-3 rounded-full cursor-pointer hover:bg-[#1c9d36] transition">
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white/10 p-3 rounded-full cursor-pointer hover:bg-[#1c9d36] transition"
+                        >
                             <FaFacebookF />
-                        </div>
-                        <div className="bg-white/10 p-3 rounded-full cursor-pointer hover:bg-[#1c9d36] transition">
+                        </a>
+
+                        <a
+                            href="https://www.instagram.com/medicaresystemrgkak?utm_source=qr&igsh=MTJoZnZ0eGFtOGducA=="
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white/10 p-3 rounded-full cursor-pointer hover:bg-[#1c9d36] transition"
+                        >
                             <FaInstagram />
-                        </div>
-                        <div className="bg-white/10 p-3 rounded-full cursor-pointer hover:bg-[#1c9d36] transition">
+                        </a>
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white/10 p-3 rounded-full cursor-pointer hover:bg-[#1c9d36] transition"
+                        >
                             <FaLinkedinIn />
-                        </div>
+                        </a>
+
                     </div>
                 </div>
 
