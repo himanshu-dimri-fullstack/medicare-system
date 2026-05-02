@@ -3,7 +3,7 @@ import React from "react";
 const EnquirySection = () => {
 
     const handleWhatsAppRedirect = () => {
-        const phoneNumber = "918979239430";
+        const phoneNumber = "919810857534";;
         const message = `Hi,
 
 I would like to enquire about your products/services.

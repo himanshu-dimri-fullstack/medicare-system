@@ -1,75 +1,75 @@
 import React, { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-    const [active, setActive] = useState("Home"); // ✅ active state
 
-    const menuItems = ["Home", "About Us", "Services", "Products", "Contact Us"];
+    const menuItems = [
+        { name: "Home", path: "/" },
+        { name: "About Us", path: "/about" },
+        { name: "Services", path: "/services" },
+        { name: "Products", path: "/products" },
+        { name: "Contact Us", path: "/contact" },
+    ];
 
     return (
-        <div className="w-full shadow-sm bg-white">
+        <div className="w-full sticky top-0 z-50 bg-white shadow-sm">
+
             <div className="max-w-7xl mx-auto px-4">
 
                 <div className="flex h-20 items-center justify-between">
 
-                    <div>
-                        <img src="/assets/logo2.png" className="h-12 w-auto" />
-                        <span className="text-sm text-[#1c9d36] font-semibold mb-8">
-                            Medicare {" "}
-                            <span className="text-black">System Inc.</span>
+                    <Link to="/" className="flex flex-col cursor-pointer">
+                        <img src="/assets/logo2.png" className="h-12 w-16" />
+                        <span className="text-sm text-[#1c9d36] font-semibold">
+                            Medicare <span className="text-black">System Inc.</span>
                         </span>
-                    </div>
+                    </Link>
 
-                    <ul
-                        className="hidden md:flex gap-2 lg:gap-6 text-lg font-medium"
-                        style={{ fontFamily: "Poppins" }}
-                    >
+                    <ul className="hidden md:flex gap-2 lg:gap-6 text-lg font-medium">
                         {menuItems.map((item, i) => (
-                            <li
+                            <NavLink
                                 key={i}
-                                onClick={() => setActive(item)}
-                                className={`px-4 py-2 rounded-xl cursor-pointer transition-all duration-300 
-                  ${active === item
+                                to={item.path}
+                                className={({ isActive }) =>
+                                    `px-4 py-2 rounded-xl transition-all duration-300 
+                                    ${isActive
                                         ? "bg-[#1c9d36] text-white"
                                         : "hover:bg-[#1c9d36] hover:text-white"
-                                    }`}
+                                    }`
+                                }
                             >
-                                {item}
-                            </li>
+                                {item.name}
+                            </NavLink>
                         ))}
                     </ul>
 
                     <div className="md:hidden">
-                        <button
-                            onClick={() => setOpen(!open)}
-                            className="text-2xl"
-                        >
+                        <button onClick={() => setOpen(!open)} className="text-2xl">
                             {open ? "✕" : "☰"}
                         </button>
                     </div>
+
                 </div>
 
                 {open && (
-                    <div className="md:hidden pb-4">
-                        <ul
-                            className="flex flex-col gap-3 text-lg font-medium"
-                            style={{ fontFamily: "Poppins" }}
-                        >
+                    <div className="md:hidden pb-4 bg-white">
+                        <ul className="flex flex-col gap-3 text-lg font-medium">
                             {menuItems.map((item, i) => (
-                                <li
+                                <NavLink
                                     key={i}
-                                    onClick={() => {
-                                        setActive(item);
-                                        setOpen(false);
-                                    }}
-                                    className={`px-4 py-2 rounded-xl cursor-pointer transition-all duration-300 
-                    ${active === item
+                                    to={item.path}
+                                    onClick={() => setOpen(false)}
+                                    className={({ isActive }) =>
+                                        `px-4 py-2 rounded-xl transition-all duration-300 
+                                        ${isActive
                                             ? "bg-[#1c9d36] text-white"
                                             : "hover:bg-[#1c9d36] hover:text-white"
-                                        }`}
+                                        }`
+                                    }
                                 >
-                                    {item}
-                                </li>
+                                    {item.name}
+                                </NavLink>
                             ))}
                         </ul>
                     </div>
