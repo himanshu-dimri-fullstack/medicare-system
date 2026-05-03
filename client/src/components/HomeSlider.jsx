@@ -8,11 +8,14 @@ const SliderComponent = Slick.default;
 
 const HomeSlider = () => {
     const settings = {
-        // dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true
     };
     console.log(Slider);
     return (
@@ -27,7 +30,7 @@ const HomeSlider = () => {
                     <img src="/assets/SLIDER-IMAGES/slider2.jpg" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%] border-[#eee]" />
                 </div>
                 <div className="w-full border-[#eee]">
-                    <img src="/assets/SLIDER-IMAGES/slider3.png" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%] border-[#eee]" />
+                    <img src="/assets/SLIDER-IMAGES/slider.jpg" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%] border-[#eee]" />
                 </div>
                 <div className="w-full border-[#eee]">
                     <img src="/assets/SLIDER-IMAGES/slider4.jpg" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%]  border-[#eee]" />
