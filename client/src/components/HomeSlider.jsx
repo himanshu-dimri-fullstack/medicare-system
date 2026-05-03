@@ -17,17 +17,30 @@ const HomeSlider = () => {
     console.log(Slider);
     return (
 
-        <Slider {...settings}>
-            <div className="w-full border-[#eee]">
-                <img src="/assets/slider/1.jpg" className="w-full h-50 sm:h-75 md:h-120 object-cover object-[center_20%]  border-[#eee]" />
-            </div>
-            <div className="w-full border-[#eee]">
-                <img src="/assets/slider/2.jpg" className="w-full h-50 sm:h-75 md:h-120 object-cover object-[center_20%] border-[#eee]" />
-            </div>
-            <div className="w-full border-[#eee]">
-                <img src="/assets/slider/3.jpg" className="w-full h-50 sm:h-75 md:h-120 object-cover object-[center_20%] border-[#eee]" />
-            </div>
-        </Slider>
+        <div className="max-w-7xl mx-auto">
+
+            <Slider {...settings}>
+                <div className="w-full border-[#eee]">
+                    <img src="/assets/SLIDER-IMAGES/slider1.jpg" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%]  border-[#eee]" />
+                </div>
+                <div className="w-full border-[#eee]">
+                    <img src="/assets/SLIDER-IMAGES/slider2.jpg" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%] border-[#eee]" />
+                </div>
+                <div className="w-full border-[#eee]">
+                    <img src="/assets/SLIDER-IMAGES/slider3.png" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%] border-[#eee]" />
+                </div>
+                <div className="w-full border-[#eee]">
+                    <img src="/assets/SLIDER-IMAGES/slider4.jpg" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%]  border-[#eee]" />
+                </div>
+                <div className="w-full border-[#eee]">
+                    <img src="/assets/SLIDER-IMAGES/slider5.jpg" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%] border-[#eee]" />
+                </div>
+                <div className="w-full border-[#eee]">
+                    <img src="/assets/SLIDER-IMAGES/slider6.jpg" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%] border-[#eee]" />
+                </div>
+            </Slider>
+
+        </div>
 
     )
 }

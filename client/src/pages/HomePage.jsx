@@ -9,10 +9,10 @@ import EnquirySection from "../components/EnquitySection";
 
 const HomePage = () => {
     return (
-        <div>
+        <div className="bg-linear-to-br from-[#e9f7ef] to-white">
             <HomeSlider />
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 -mt-2">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 -mt-2">
 
                 <div className="bg-[#1c9d36] flex justify-center py-6">
                     <div className="max-w-xs text-center">

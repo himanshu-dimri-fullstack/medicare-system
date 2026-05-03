@@ -73,12 +73,10 @@ const AboutPage = () => {
                 </p>
             </div>
 
-            {/* Mission & Vision */}
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 mt-12">
 
-                {/* Mission */}
-                <div className="bg-[#1c9d36] text-white p-8 rounded-3xl shadow-lg hover:scale-[1.02] transition">
-                    <h2 className="text-2xl font-semibold mb-4">Mission</h2>
+                <div className="bg-white border border-[#1c9d36]/20 p-8 rounded-3xl shadow-lg hover:scale-[1.02] transition">
+                    <h2 className="text-2xl font-semibold text-[#1c9d36] mb-4">Mission</h2>
                     <p className="text-sm leading-relaxed">
                         To achieve excellence through integrity, innovation, and
                         commitment—creating value for our clients, empowering our workforce,
@@ -86,7 +84,6 @@ const AboutPage = () => {
                     </p>
                 </div>
 
-                {/* Vision */}
                 <div className="bg-white border border-[#1c9d36]/20 p-8 rounded-3xl shadow-lg hover:scale-[1.02] transition">
                     <h2 className="text-2xl font-semibold text-[#1c9d36] mb-4">
                         Vision

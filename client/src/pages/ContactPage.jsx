@@ -19,6 +19,25 @@ Looking forward to your response. Thanks!`;
         window.open(url, "_blank");
     };
 
+    const handleEmailRedirect = () => {
+        const email = "info@medicaresystem.in";
+        const subject = "Enquiry";
+        const body = `Hi,
+
+I would like to enquire about your products/services.
+
+Please share:
+• Product details & pricing  
+• Available options  
+• Delivery timeline  
+
+Looking forward to your response. Thanks!`;
+
+        const url = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        window.location.href = url;
+    };
+
     return (
         <div className="w-full min-h-screen bg-linear-to-br from-[#e9f7ef] to-white px-6 md:px-16 py-12">
 
@@ -46,20 +65,23 @@ Looking forward to your response. Thanks!`;
 
                     <div className="space-y-5">
 
-                        <div className="p-4 rounded-xl bg-gray-50">
+                        {/* <div className="p-4 rounded-xl bg-gray-50">
                             <p className="text-sm text-gray-500">Phone</p>
                             <p className="text-lg font-semibold text-gray-800">
                                 +91 9810857534
                             </p>
-                        </div>
+                        </div> */}
 
                         <div className="p-4 rounded-xl bg-gray-50">
                             <p className="text-sm text-gray-500">Email</p>
-                            <p className="text-lg font-semibold text-gray-800">
+
+                            <p
+                                onClick={handleEmailRedirect}
+                                className="text-lg font-semibold text-gray-800 hover:text-blue-600 transition cursor-pointer"
+                            >
                                 info@medicaresystem.in
                             </p>
                         </div>
-
                     </div>
 
                     <div className="mt-4 p-5 bg-[#1c9d36] text-white rounded-2xl">
