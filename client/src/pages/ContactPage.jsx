@@ -19,23 +19,16 @@ Looking forward to your response. Thanks!`;
         window.open(url, "_blank");
     };
 
-    const handleEmailRedirect = () => {
+    const handleGmailRedirect = () => {
         const email = "info@medicaresystem.in";
         const subject = "Enquiry";
         const body = `Hi,
 
-I would like to enquire about your products/services.
+I would like to enquire about your products/services.`;
 
-Please share:
-• Product details & pricing  
-• Available options  
-• Delivery timeline  
+        const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-Looking forward to your response. Thanks!`;
-
-        const url = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-        window.location.href = url;
+        window.open(url, "_blank");
     };
 
     return (
@@ -76,7 +69,7 @@ Looking forward to your response. Thanks!`;
                             <p className="text-sm text-gray-500">Email</p>
 
                             <p
-                                onClick={handleEmailRedirect}
+                                onClick={handleGmailRedirect}
                                 className="text-lg font-semibold text-gray-800 hover:text-blue-600 transition cursor-pointer"
                             >
                                 info@medicaresystem.in
