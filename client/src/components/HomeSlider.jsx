@@ -23,22 +23,10 @@ const HomeSlider = () => {
 
             <Slider {...settings}>
                 <div className="w-full border-[#eee]">
-                    <img src="/assets/SLIDER-IMAGES/slider1.webp" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%]  border-[#eee]" />
+                    <img src="/assets/SLIDER-IMAGES/slider1.jpg" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%]  border-[#eee]" />
                 </div>
                 <div className="w-full border-[#eee]">
-                    <img src="/assets/SLIDER-IMAGES/slider2.webp" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%] border-[#eee]" />
-                </div>
-                <div className="w-full border-[#eee]">
-                    <img src="/assets/SLIDER-IMAGES/slider.webp" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%] border-[#eee]" />
-                </div>
-                <div className="w-full border-[#eee]">
-                    <img src="/assets/SLIDER-IMAGES/slider4.webp" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%]  border-[#eee]" />
-                </div>
-                <div className="w-full border-[#eee]">
-                    <img src="/assets/SLIDER-IMAGES/slider5.webp" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%] border-[#eee]" />
-                </div>
-                <div className="w-full border-[#eee]">
-                    <img src="/assets/SLIDER-IMAGES/slider6.webp" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%] border-[#eee]" />
+                    <img src="/assets/SLIDER-IMAGES/slider2.png" className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%] border-[#eee]" />
                 </div>
             </Slider>
 
