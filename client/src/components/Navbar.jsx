@@ -22,8 +22,8 @@ const Navbar = () => {
                     <Link to="/" className="flex flex-col cursor-pointer">
                         <img src="/assets/logo2.png" className="h-12 w-16" />
                         <span className="text-sm text-[#1c9d36] font-semibold">
-                            Medicare <span className="text-black">System Inc.</span>
-                        </span>
+                            Medicare
+                            System Inc.</span>
                     </Link>
 
                     <ul className="hidden md:flex gap-2 lg:gap-6 text-lg font-medium">
