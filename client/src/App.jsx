@@ -8,6 +8,7 @@ import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import ProductsPage from './pages/ProductPage'
 import ServicePage from './pages/ServicePage'
+import CommonIcons from './components/CommonIcons'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
 
       <ScrollToTop />
       <Navbar />
+      <CommonIcons />
 
       <Routes>
         <Route path="/" element={<HomePage />} />

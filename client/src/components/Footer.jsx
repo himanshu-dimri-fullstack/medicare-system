@@ -18,11 +18,11 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
                 {/* About */}
-                <div>
-                    <h2 className="text-xl font-semibold text-white mb-4">
+                <div className="col-span-2">
+                    <h2 className="text-xl font-semibold text-white mb-4 ">
                         Medicare System
                     </h2>
-                    <p className="text-sm leading-relaxed">
+                    <p className="text-sm leading-relaxed w-[80%]">
                         Providing trusted medical equipment and technical solutions since 2008.
                         We deliver quality, safety, and innovation for healthcare needs.
                     </p>
@@ -63,40 +63,6 @@ const Footer = () => {
                             info@medicaresystem.in
                         </li>
                     </ul>
-                </div>
-
-                {/* Social */}
-                <div>
-                    <h2 className="text-xl font-semibold text-white mb-4">
-                        Follow Us
-                    </h2>
-
-                    <div className="flex gap-4">
-
-                        <a
-                            href="#"
-                            className="bg-white/10 p-3 rounded-full hover:bg-[#1c9d36] transition"
-                        >
-                            <FaFacebookF />
-                        </a>
-
-                        <a
-                            href="https://www.instagram.com/medicaresystemrgkak?utm_source=qr&igsh=MTJoZnZ0eGFtOGducA=="
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-white/10 p-3 rounded-full hover:bg-[#1c9d36] transition"
-                        >
-                            <FaInstagram />
-                        </a>
-
-                        <a
-                            href="#"
-                            className="bg-white/10 p-3 rounded-full hover:bg-[#1c9d36] transition"
-                        >
-                            <FaLinkedinIn />
-                        </a>
-
-                    </div>
                 </div>
 
             </div>
