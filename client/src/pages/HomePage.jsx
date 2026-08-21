@@ -3,9 +3,10 @@ import HomeSlider from "../components/HomeSlider";
 import { FaPhone } from "react-icons/fa6";
 import { FaRegThumbsUp } from "react-icons/fa";
 import { AiFillSafetyCertificate } from "react-icons/ai";
-import ProductsSlider from "../components/ProductsSlider";
+// import ProductsSlider from "../components/ProductsSlider";
 import AboutSection from "../components/AboutSection";
 import EnquirySection from "../components/EnquitySection";
+import FeaturedProducts from "../components/FeaturedProducts";
 
 const HomePage = () => {
     return (
@@ -56,13 +57,14 @@ const HomePage = () => {
                 </div>
 
             </div>
-            <div className="bg-linear-to-br from-[#e9f7ef] to-white py-12 px-4 pt-10">
+            <div className="bg-linear-to-br from-[#e9f7ef] to-white py-12">
                 <div className="max-w-7xl mx-auto">
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-8">
-                        Medicare System{" "}
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-12">
+                        Featured{" "}
                         <span className="text-[#1c9d36]">Products</span>
                     </h2>
-                    <ProductsSlider />
+
+                    <FeaturedProducts />
                 </div>
                 <AboutSection />
                 <EnquirySection />

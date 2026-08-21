@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaFax } from "react-icons/fa";
+
 
 const Footer = () => {
 
@@ -56,13 +58,22 @@ const Footer = () => {
                     <ul className="space-y-3 text-sm">
                         <li className="flex items-center gap-3">
                             <FaPhoneAlt className="text-[#1c9d36]" />
-                            +91 9810857534
+                            +91-11-65176883
                         </li>
                         <li className="flex items-center gap-3">
+                            <FaFax className="text-[#1c9d36]" />
+                            +91-11-45651434
+                        </li>
+                        {/* <li className="flex items-center gap-3">
                             <FaEnvelope className="text-[#1c9d36]" />
                             info@medicaresystem.in
-                        </li>
+                        </li> */}
                     </ul>
+                    <div className="space-y-3 text-sm mt-4">
+                        <h6 className="text-md font-semibold">Office Address:</h6>
+                        <p className="w-[70%]">704, 7th Floor, Kirti Shikhar Tower District Centre, Janakpuri</p>
+                        <p>New Delhi-110058</p>
+                    </div>
                 </div>
 
             </div>
