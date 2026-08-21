@@ -11,7 +11,6 @@ const HomePage = () => {
     return (
         <div className="bg-linear-to-br from-[#e9f7ef] to-white">
             <HomeSlider />
-
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 -mt-2">
 
                 <div className="bg-[#1c9d36] flex justify-center py-6">
@@ -57,27 +56,17 @@ const HomePage = () => {
                 </div>
 
             </div>
-
             <div className="bg-linear-to-br from-[#e9f7ef] to-white py-12 px-4 pt-10">
-
                 <div className="max-w-7xl mx-auto">
-
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-8">
                         Medicare System{" "}
                         <span className="text-[#1c9d36]">Products</span>
                     </h2>
-
                     <ProductsSlider />
-
                 </div>
-
                 <AboutSection />
-
                 <EnquirySection />
-
             </div>
-
-
 
         </div>
     );

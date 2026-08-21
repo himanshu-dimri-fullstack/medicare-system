@@ -71,7 +71,7 @@ export const categories = [
         ]
     },
     {
-        name: "GAYNAECOLOGY",
+        name: "GYNAECOLOGY",
         image: "/assets/logo2.png",
         subProducts: [
             "Cryosurgical Unit",
