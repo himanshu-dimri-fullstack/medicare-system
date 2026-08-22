@@ -71,7 +71,7 @@ const Footer = () => {
                     </ul>
                     <div className="space-y-2 text-sm mt-4">
                         <h6 className="text-md font-semibold">Office Address</h6>
-                        <p className="w-[70%]">704, 7th Floor, Kirti Shikhar Tower District Centre, Janakpuri</p>
+                        <p className="w-[80%]">704, 7th Floor, Kirti Shikhar Tower District Centre, Janakpuri</p>
                         <p>New Delhi-110058</p>
                     </div>
                 </div>

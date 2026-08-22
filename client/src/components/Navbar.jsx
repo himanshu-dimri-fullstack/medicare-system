@@ -20,7 +20,7 @@ const Navbar = () => {
                 <div className="flex h-20 items-center justify-between">
 
                     <Link to="/" className="flex flex-col cursor-pointer">
-                        <img src="/assets/logo2.png" className="h-12 w-16" />
+                        <img src="/assets/logo2.png" className="h-10 w-14" />
                         <span className="text-sm text-[#1c9d36] font-semibold">
                             Medicare
                             System Inc.</span>
