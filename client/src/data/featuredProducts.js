@@ -3,7 +3,7 @@ export const data = [
         id: 1,
         name: "Defibrillator",
         desc: "A fully featured clinical defibrillator designed for both emergency response and advanced patient care.",
-        image: "/assets/featuredProducts/uniblocker.jpeg",
+        image: "/assets/featuredProducts/defibrillator.png",
     },
     {
         id: 2,
@@ -13,14 +13,14 @@ export const data = [
     },
     {
         id: 3,
-        name: "UNIBLOCKERTM",
+        name: "UNIBLOCKER",
         desc: "Bronchial blocker designed for controlled placement for total or segmental bronchial blockade.",
         image: "/assets/featuredProducts/uniblocker.jpeg",
     },
     {
         id: 4,
-        name: "Defibrillator",
-        desc: "A fully featured clinical defibrillator designed for both emergency response and advanced patient care.",
-        image: "/assets/featuredProducts/uniblocker.jpeg",
+        name: "Pressure Care and Patient Positioning",
+        desc: "Surgical positioning and pressure care devices are foundational tools in the modern operating theatre.",
+        image: "/assets/featuredProducts/pressure-care.jpeg",
     },
 ]

@@ -17,7 +17,7 @@ const Footer = () => {
     return (
         <footer className="bg-[#0f172a] text-gray-300 pt-14 pb-6 px-4">
 
-            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
                 {/* About */}
                 <div className="col-span-2">
@@ -69,8 +69,8 @@ const Footer = () => {
                             info@medicaresystem.in
                         </li> */}
                     </ul>
-                    <div className="space-y-3 text-sm mt-4">
-                        <h6 className="text-md font-semibold">Office Address:</h6>
+                    <div className="space-y-2 text-sm mt-4">
+                        <h6 className="text-md font-semibold">Office Address</h6>
                         <p className="w-[70%]">704, 7th Floor, Kirti Shikhar Tower District Centre, Janakpuri</p>
                         <p>New Delhi-110058</p>
                     </div>

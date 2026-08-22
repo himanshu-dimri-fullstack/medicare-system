@@ -5,15 +5,15 @@ console.log(data)
 const FeaturedProducts = () => {
 
     return (
-        <div className='grid grid-cols-4 gap-4'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
             {
                 data.map((item) => {
                     return (
                         <div key={item.id} className='bg-white rounded shadow  hover:shadow-[0_4px_15px_rgba(28,157,54,0.35)] p-4'>
                             <div className='flex justify-center'>
-                                <img src={item.image} className='h-40' />
+                                <img src={item.image} className='h-25 md:h-30 lg:h-40' />
                             </div>
-                            <h3 className='text-xl text-center mt-4 mb-2'>{item.name}</h3>
+                            <h3 className='text-xl text-center mt-4 mb-2 lg:h-15'>{item.name}</h3>
                             <p className="text-gray-600 text-sm sm:text-base leading-relaxed">{item.desc}</p>
                         </div>)
                 })

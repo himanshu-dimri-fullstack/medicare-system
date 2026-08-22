@@ -36,10 +36,10 @@ I would like to enquire about your products/services.`;
   return (
     <div className='z-99 fixed right-0 bottom-10 flex justify-center items-center w-12 bg-white border border-[#ccc] shadow-lg'>
       <ul className='py-3 '>
-        <li className='rounded text-xl p-2 text-[#1c9d36] font-bold hover:bg-[#1c9d36] hover:text-white' onClick={handleWhatsAppRedirect}>
+        <li className='rounded text-xl lg:text-2xl p-2 text-[#1c9d36] font-bold hover:bg-[#1c9d36] hover:text-white' onClick={handleWhatsAppRedirect}>
           <FaWhatsapp className='stroke-[10.5]' />
         </li>
-        <li className='rounded text-xl p-2 text-red-500 font-bold hover:bg-red-500 hover:text-white' onClick={handleGmailRedirect}>
+        <li className='rounded text-xl lg:text-2xl p-2 text-red-500 font-bold hover:bg-red-500 hover:text-white' onClick={handleGmailRedirect}>
           <SiGmail className='stroke-[1.5]' />
         </li>
         {/* <li className='rounded text-xl p-2 hover:bg-[#1c9d36] hover:text-white'> <a

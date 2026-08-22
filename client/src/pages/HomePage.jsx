@@ -57,9 +57,9 @@ const HomePage = () => {
                 </div>
 
             </div>
-            <div className="bg-linear-to-br from-[#e9f7ef] to-white py-12">
+            <div className="bg-linear-to-br from-[#e9f7ef] to-white py-12 px-4">
                 <div className="max-w-7xl mx-auto">
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-12">
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6 lg:mb-12">
                         Featured{" "}
                         <span className="text-[#1c9d36]">Products</span>
                     </h2>
