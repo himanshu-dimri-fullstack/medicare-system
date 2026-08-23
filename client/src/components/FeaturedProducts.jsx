@@ -1,5 +1,6 @@
 import React from 'react'
 import { data } from "../data/featuredproducts";
+import { Link } from 'react-router-dom';
 console.log(data)
 
 const FeaturedProducts = () => {
@@ -9,13 +10,13 @@ const FeaturedProducts = () => {
             {
                 data.map((item) => {
                     return (
-                        <div key={item.id} className='cursor-pointer group bg-white hover:bg-[#1c9d36] hover:text-white rounded shadow  hover:shadow-[0_4px_15px_rgba(28,157,54,0.35)] p-4'>
+                        <Link to="/products/anaesthesia/uniblocker" key={item.id} className='cursor-pointer group bg-white hover:bg-[#1c9d36] hover:text-white rounded shadow  hover:shadow-[0_4px_15px_rgba(28,157,54,0.35)] p-4'>
                             <div className='flex justify-center'>
                                 <img src={item.image} className='h-25 md:h-30 lg:h-40' />
                             </div>
                             <h3 className='text-xl text-center mt-4 mb-2 lg:h-15'>{item.name}</h3>
                             <p className="text-gray-600 group-hover:text-white text-sm sm:text-base leading-relaxed">{item.desc}</p>
-                        </div>)
+                        </Link>)
                 })
             }
 
