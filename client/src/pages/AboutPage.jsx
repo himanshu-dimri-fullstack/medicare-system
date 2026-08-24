@@ -15,7 +15,7 @@ const AboutPage = () => {
             </div>
 
             {/* Main Content Card */}
-            <div className="max-w-6xl mx-auto bg-white rounded-3xl shadow-xl p-8 md:p-12 space-y-6 leading-relaxed text-gray-700">
+            <div className="max-w-6xl text-gray-600 mx-auto text-sm bg-white rounded-3xl shadow-xl p-8 md:p-12 space-y-6 leading-relaxed">
 
                 <p>
                     <span className="font-semibold text-[#1c9d36]">
@@ -77,7 +77,7 @@ const AboutPage = () => {
 
                 <div className="bg-white border border-[#1c9d36]/20 p-8 rounded-3xl shadow-lg hover:scale-[1.02] transition">
                     <h2 className="text-2xl font-semibold text-[#1c9d36] mb-4">Mission</h2>
-                    <p className="text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed">
                         To achieve excellence through integrity, innovation, and
                         commitment—creating value for our clients, empowering our workforce,
                         and contributing responsibly to society.
@@ -88,9 +88,9 @@ const AboutPage = () => {
                     <h2 className="text-2xl font-semibold text-[#1c9d36] mb-4">
                         Vision
                     </h2>
-                    <p className="text-gray-700 text-sm leading-relaxed">
-                        "To strengthen India’s healthcare ecosystem by delivering world-class, accessible, fast, cost-effective, and sustainable solutions—while proudly serving
-                        the nation, including its defence forces, with unwavering dedication."
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                        To strengthen India’s healthcare ecosystem by delivering world-class, accessible, fast, cost-effective, and sustainable solutions—while proudly serving
+                        the nation, including its defence forces, with unwavering dedication.
                     </p>
                 </div>
 

@@ -12,10 +12,6 @@ import { LuTestTubeDiagonal } from "react-icons/lu";
 import { MdOutlineConnectWithoutContact } from "react-icons/md";
 
 
-
-
-
-
 const ProductDetail = () => {
     return (
         <div className='min-h-screen bg-linear-to-br from-[#e9f7ef]'>
@@ -81,7 +77,7 @@ const ProductDetail = () => {
                         </div>
                         <div>
                             <h3 className='text-lg md:text-xl lg:text-xl font-semibold mb-1'>Application</h3>
-                            <p className='text-sm text-gray-600 font-semibold font-semibold'>One-Lung Ventilation</p>
+                            <p className='text-sm text-gray-600 font-semibold'>One-Lung Ventilation</p>
                         </div>
                     </div>
                     <div className='w-0.5 bg-gray-400'>
