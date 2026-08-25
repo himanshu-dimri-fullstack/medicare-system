@@ -3,6 +3,7 @@ import { categories } from "../data/products.js";
 import { FaHeartbeat, FaStethoscope, FaProcedures } from "react-icons/fa";
 import { MdMedicalServices } from "react-icons/md";
 import { IoChevronDown } from "react-icons/io5";
+import ProductCategoryCard from "../components/ProductCategoryCard.jsx";
 
 const ProductsPage = () => {
     const [openCards, setOpenCards] = useState({});
@@ -34,7 +35,9 @@ const ProductsPage = () => {
                 </p>
             </div>
 
-            <div className="columns-1 sm:columns-2 lg:columns-3 gap-8 space-y-8">
+            <ProductCategoryCard />
+
+            {/* <div className="columns-1 sm:columns-2 lg:columns-3 gap-8 space-y-8">
 
                 {categories.map((cat, index) => (
                     <div
@@ -86,7 +89,7 @@ const ProductsPage = () => {
                     </div>
                 ))}
 
-            </div>
+            </div> */}
         </div>
     );
 };

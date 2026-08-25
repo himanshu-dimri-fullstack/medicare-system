@@ -15,8 +15,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-[#0f172a] text-gray-300 pt-14 pb-6 px-4">
-
+        <footer className="bg-[#0f172a] text-gray-300 pt-6 pb-4 px-4">
             <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
                 {/* About */}
@@ -78,10 +77,9 @@ const Footer = () => {
 
             </div>
 
-            <div className="border-t border-gray-700 mt-10 pt-5 text-center text-sm text-gray-400">
-                © {new Date().getFullYear()} Medicare System Inc. All rights reserved.
+            <div className="border-t border-gray-700 mt-6 pt-4 text-center text-sm text-gray-400">
+                <p> © {new Date().getFullYear()} Medicare System Inc. All rights reserved.</p>
             </div>
-
         </footer>
     );
 };
