@@ -70,7 +70,7 @@ const ProductsPage = () => {
                             className={`overflow-hidden transition-all duration-500 ${openCards[index]
                                 ? "max-h-125 mt-4 opacity-100"
                                 : "max-h-0 opacity-0"
-                                }`}
+                                }`} 
                         >
                             <ul className="mt-3 space-y-2">
                                 {cat.subProducts.map((item, i) => (

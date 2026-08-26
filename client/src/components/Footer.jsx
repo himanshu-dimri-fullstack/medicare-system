@@ -72,6 +72,7 @@ const Footer = () => {
                         <h6 className="text-md font-semibold">Office Address</h6>
                         <p className="w-[80%]">704, 7th Floor, Kirti Shikhar Tower District Centre, Janakpuri</p>
                         <p>New Delhi-110058</p>
+                        <p>India</p>
                     </div>
                 </div>
 
