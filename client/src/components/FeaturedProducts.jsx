@@ -1,5 +1,5 @@
 import React from 'react'
-import { data } from "../data/featuredproducts.js";
+import { data } from "../data/featuredProductsData.js";
 import { Link } from 'react-router-dom';
 console.log(data)
 
