@@ -33,7 +33,7 @@ const ImageSlider = () => {
 
     return (
 
-        <div className="relative w-[50%] md:w-full overflow-hidden rounded-lg"
+        <div className="relative w-[80%] sm:w-[60%] md:w-full overflow-hidden rounded-lg"
             onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
 
             <div className="w-full border-[#eee]">
@@ -73,7 +73,7 @@ const ImageSlider = () => {
             </div>
 
             <div className="absolute top-[3%] left-[3%]">
-                <button className="hover:bg-[#1c9d36] hover:text-white flex gap-2 items-center border border-[#1c9d36] text-[#1c9d36] bg-white rounded-2xl px-3 py-1"><FaDownload /> <span>Product Brochure</span></button>
+                <button className="hover:bg-[#1c9d36] hover:text-white flex gap-2 items-center border border-[#1c9d36] text-[#1c9d36] bg-white rounded-2xl px-3 py-1"><FaDownload /> <span>Brochure</span></button>
             </div>
         </div>
     );

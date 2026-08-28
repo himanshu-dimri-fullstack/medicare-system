@@ -6,35 +6,61 @@ import { Link } from 'react-router-dom';
 console.log(data)
 
 const FeaturedProductSlider = () => {
+    const [visibleCards, setVisibleCards] = useState(4);
     const [state, setState] = useState(0)
     const [isHovered, setIsHovered] = useState(false)
 
+    const maxIndex = Math.max(data.length - visibleCards, 0);
+
     const handlePrev = () => {
-        setState((prev) => prev === 0 ? data.length - 4 : prev - 1)
-    }
+        setState((prev) => prev === 0 ? maxIndex : prev - 1);
+    };
 
     const handleNext = () => {
-        setState((prev) => prev === data.length - 4 ? 0 : prev + 1)
-    }
+        setState((prev) => prev === maxIndex ? 0 : prev + 1);
+    };
 
 
     useEffect(() => {
-        if (isHovered) return
+        const handleResize = () => {
+            if (window.innerWidth < 640) {
+                setVisibleCards(1);
+            } else if (window.innerWidth < 1024) {
+                setVisibleCards(2);
+            } else {
+                setVisibleCards(4);
+            }
+        };
+
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+
+    useEffect(() => {
+        if (isHovered || data.length <= visibleCards) return;
+
         const interval = setInterval(() => {
-            setState((prev) => prev === data.length - 4 ? 0 : prev + 1)
-        }, 3000)
-        return () => clearInterval(interval)
-    }, [isHovered])
+            setState((prev) =>
+                prev === maxIndex ? 0 : prev + 1
+            );
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, [isHovered, visibleCards, maxIndex]);
 
     return (
         <div className="max-w-7xl mx-auto relative overflow-hidden" onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}>
             <div className="flex transition-transform duration-500 ease-in-out gap-1"
-                style={{ transform: `translateX(-${state * 25}%)` }}>
+                style={{ transform: `translateX(-${state * (100 / visibleCards)}%)` }}>
                 {
                     data.map((item) => {
                         return (
-                            <Link to="/products/anaesthesia/uniblocker" key={item.id} className='w-[25%] shrink-0 cursor-pointer group bg-white hover:bg-[#1c9d36] hover:text-white rounded shadow 
+                            <Link to="/products/anaesthesia/uniblocker" key={item.id} className='w-full sm:w-1/2 lg:w-1/4 shrink-0 cursor-pointer group bg-white hover:bg-[#1c9d36] hover:text-white rounded shadow 
                              hover:shadow-[0_4px_15px_rgba(28,157,54,0.35)] p-4'>
                                 <div className='flex justify-center'>
                                     <img src={item.image} className='h-25 md:h-30 lg:h-40' />

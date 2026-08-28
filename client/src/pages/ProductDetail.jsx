@@ -35,39 +35,39 @@ const ProductDetail = () => {
                             <span className='text-gray-600 text-sm font-semibold'>Uniblocker</span>
                         </div>
                         <h1 className='text-2xl sm:text-3xl lg:text-4xl uppercase font-semibold mt-8'>Uniblocker</h1>
-                        <p className='text-lg text-gray-600 py-5'>Bronchial blocker designed for controlled placement for total or segmental bronchial blockade.</p>
+                        <p className='text-sm md:text-lg text-gray-600 py-5'>Bronchial blocker designed for controlled placement for total or segmental bronchial blockade.</p>
                         <div className='mb-5'>
                             <div className='flex gap-2 items-center mb-3'>
                                 <div className='rounded-[50%] border border-[#1c9d36] text-sm w-6 h-6 flex 
                             justify-center items-center'>
                                     <TiTick />
                                 </div>
-                                <p className='text-md text-gray-600'>Simple and intuitiveplacement</p>
+                                <p className='text-sm md:text-md text-gray-600'>Simple and intuitiveplacement</p>
                             </div>
                             <div className='flex gap-2 items-center mb-3'>
                                 <div className='rounded-[50%] border border-[#1c9d36] text-sm w-6 h-6 flex 
                             justify-center items-center'>
                                     <TiTick />
                                 </div>
-                                <p className='text-md text-gray-600'>Canbeplaced througha standard endotracheal tube</p>
+                                <p className='text-sm md:text-md text-gray-600'>Canbeplaced througha standard endotracheal tube</p>
                             </div>
                             <div className='flex gap-2 items-center mb-3'>
                                 <div className='rounded-[50%] border border-[#1c9d36] text-sm w-6 h-6 flex 
                             justify-center items-center'>
                                     <TiTick />
                                 </div>
-                                <p className='text-md text-gray-600'>Flexible high-torqueblocker shaft</p>
+                                <p className='text-sm md:text-md text-gray-600'>Flexible high-torqueblocker shaft</p>
                             </div>
                             <div className='flex gap-2 items-center'>
                                 <div className='rounded-[50%] border border-[#1c9d36] text-sm w-6 h-6 flex 
                             justify-center items-center'>
                                     <TiTick />
                                 </div>
-                                <p className='text-md text-gray-600'>Unique swivelbronch adapter</p>
+                                <p className='text-sm md:text-md text-gray-600'>Unique swivelbronch adapter</p>
                             </div>
                         </div>
                         <div>
-                            <button className='text-white bg-[#1c9d36] px-8 py-1 rounded text-lg'>Enquiry Now</button>
+                            <button className='text-sm md:text-lg text-white bg-[#1c9d36] px-8 py-1 rounded'>Enquiry Now</button>
                         </div>
                     </div>
                     <div className='order-1 md:order-2 h-full md:shadow flex justify-center md:block'>
@@ -80,7 +80,7 @@ const ProductDetail = () => {
                             <FaGgCircle className='stroke-[10.5]' />
                         </div>
                         <div>
-                            <h3 className='text-lg lg:text-xl font-semibold mb-1'>Application</h3>
+                            <h3 className='text-md md:text-lg lg:text-xl font-semibold mb-1'>Application</h3>
                             <p className='text-sm text-gray-600 font-semibold'>One-Lung Ventilation</p>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ const ProductDetail = () => {
                             <GrCube />
                         </div>
                         <div>
-                            <h3 className='text-lg lg:text-xl font-semibold mb-1'>Product Type</h3>
+                            <h3 className='text-md md:text-lg lg:text-xl font-semibold mb-1'>Product Type</h3>
                             <p className='text-sm text-gray-600 font-semibold'>Bronchial Blocker</p>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ const ProductDetail = () => {
                             <FaRegStar className='stroke-[10.5]' />
                         </div>
                         <div>
-                            <h3 className='text-lg lg:text-xl font-semibold mb-1'>Key Features</h3>
+                            <h3 className='text-md md:text-lg lg:text-xl font-semibold mb-1'>Key Features</h3>
                             <p className='text-sm text-gray-600 font-semibold'>High-Torque Control Sharf</p>
                         </div>
                     </div>
@@ -116,7 +116,7 @@ const ProductDetail = () => {
                             <GrStepsOption className='stroke-[10.5]' />
                         </div>
                         <div>
-                            <h3 className='text-lg lg:text-xl font-semibold mb-1'>Available Options</h3>
+                            <h3 className='text-md md:text-lg lg:text-xl font-semibold mb-1'>Available Options</h3>
                             <p className='text-sm text-gray-600 font-semibold'>One-Lung Ventilation</p>
                         </div>
                     </div>
@@ -130,7 +130,7 @@ const ProductDetail = () => {
                                 <FaRegThumbsUp />
                             </div>
                             <div className='flex justify-center'>
-                                <h3 className='text-lg lg:text-xl font-semibold mb-1'>Simple Placement</h3>
+                                <h3 className='text-md md:text-lg lg:text-xl font-semibold mb-1'>Simple Placement</h3>
                             </div>
                             <div className='flex justify-center'>
                                 <p className='w-[80%] text-sm text-gray-600 font-semibold'>Designed to support simple placement for total or segmental bronchial blockade</p>
@@ -141,7 +141,7 @@ const ProductDetail = () => {
                                 <GiHamburgerMenu />
                             </div>
                             <div className='flex justify-center'>
-                                <h3 className='text-lg lg:text-xl font-semibold mb-1'>Flexible Control</h3>
+                                <h3 className='text-md md:text-lg lg:text-xl font-semibold mb-1'>Flexible Control</h3>
                             </div>
                             <div className='flex justify-center'>
                                 <p className='w-[80%] text-sm text-gray-600 font-semibold'>Polyurethane-covered wire
@@ -157,7 +157,7 @@ const ProductDetail = () => {
                                 <LuTestTubeDiagonal />
                             </div>
                             <div className='flex justify-center'>
-                                <h3 className='w-[80%] text-lg lg:text-xl font-semibold mb-1'>Standard ETTube Placement
+                                <h3 className='w-[80%] text-md md:text-lg lg:text-xl font-semibold mb-1'>Standard ETTube Placement
                                 </h3>
                             </div>
                             <div className='flex justify-center'>
@@ -171,7 +171,7 @@ const ProductDetail = () => {
                                 <MdOutlineConnectWithoutContact />
                             </div>
                             <div className='flex justify-center'>
-                                <h3 className='text-lg lg:text-xl font-semibold mb-1'>Swivel Connector</h3>
+                                <h3 className='text-md md:text-lg lg:text-xl font-semibold mb-1'>Swivel Connector</h3>
                             </div>
                             <div className='flex justify-center'>
                                 <p className='w-[80%] text-sm text-gray-600 font-semibold'>Unique swivel connector designed for easy connection to the anaesthesia circuit</p>
@@ -198,31 +198,35 @@ const ProductDetail = () => {
 
                 <div className='mt-10'>
                     <h4 className='text-lg md:text-xl lg:text-2xl font-semibold mb-4'>Specifications</h4>
-                    <table className='w-full border border-[#eee] shadow text-sm'>
-                        <thead className='border border-[#eee] bg-[#eeffff]'>
-                            <th className='border border-[#eee] py-3'>Item No.</th>
-                            <th className='border border-[#eee]'>Description</th>
-                            <th className='border border-[#eee]'>O.D.(mm)</th>
-                            <th className='border border-[#eee]'>Total Length (mm)</th>
-                            <th className='border border-[#eee]'>Maximum Cuff Volume(ml)</th>
-                        </thead>
-                        <tbody>
-                            <tr className='border border-[#eee] py-3 text-center text-gray-600'>
-                                <td className='border border-[#eee] py-2'>1203104</td>
-                                <td className='border border-[#eee] py-2'>UNIBLOCKER, Small</td>
-                                <td className='border border-[#eee] py-2'>1.7(5.0 Fr)</td>
-                                <td className='border border-[#eee] py-2'>505</td>
-                                <td className='border border-[#eee] py-2'>3</td>
-                            </tr>
-                            <tr className='border border-[#eee] py-3 text-center text-gray-600'>
-                                <td className='border border-[#eee] py-2'>1203105</td>
-                                <td className='border border-[#eee] py-2'>UNIBLOCKER, Adult</td>
-                                <td className='border border-[#eee] py-2'>3.0(9.0 Fr)</td>
-                                <td className='border border-[#eee] py-2'>675</td>
-                                <td className='border border-[#eee] py-2'>8</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div className='overflow-x-auto'>
+                        <table className='w-full min-w-175 border border-[#eee] shadow text-sm'>
+                            <thead className='border border-[#eee] bg-[#eeffff]'>
+                                <tr>
+                                    <th className='border border-[#eee] py-3'>Item No.</th>
+                                    <th className='border border-[#eee]'>Description</th>
+                                    <th className='border border-[#eee]'>O.D.(mm)</th>
+                                    <th className='border border-[#eee]'>Total Length (mm)</th>
+                                    <th className='border border-[#eee]'>Maximum Cuff Volume(ml)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr className='border border-[#eee] py-3 text-center text-gray-600'>
+                                    <td className='border border-[#eee] py-2'>1203104</td>
+                                    <td className='border border-[#eee] py-2'>UNIBLOCKER, Small</td>
+                                    <td className='border border-[#eee] py-2'>1.7(5.0 Fr)</td>
+                                    <td className='border border-[#eee] py-2'>505</td>
+                                    <td className='border border-[#eee] py-2'>3</td>
+                                </tr>
+                                <tr className='border border-[#eee] py-3 text-center text-gray-600'>
+                                    <td className='border border-[#eee] py-2'>1203105</td>
+                                    <td className='border border-[#eee] py-2'>UNIBLOCKER, Adult</td>
+                                    <td className='border border-[#eee] py-2'>3.0(9.0 Fr)</td>
+                                    <td className='border border-[#eee] py-2'>675</td>
+                                    <td className='border border-[#eee] py-2'>8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
                 <div className='my-10 shadow bg-[#eeefff] py-5 px-10'>
