@@ -26,7 +26,7 @@ export const data = [
     {
         id: 5,
         name: "Cold & Compression Therapy System",
-        desc: "Advanced cold and compression therapy system combining active cryotherapy and intermittent compression to support orthopaedic rehabilitation, post-operative recovery, injury recovery, and joint replacement rehabilitation.",
+        desc: "Advanced cold and compression therapy system combining active cryotherapy and intermittent compression.",
         image: "/assets/featuredProducts/cold-compression.webp",
     },
 ]

@@ -12,6 +12,7 @@ import { LuTestTubeDiagonal } from "react-icons/lu";
 import { MdOutlineConnectWithoutContact } from "react-icons/md";
 import { IoChevronDown } from "react-icons/io5";
 import { MdPictureAsPdf } from "react-icons/md";
+import ImageSlider from '../components/productDetailPage/ImageSlider';
 
 
 const ProductDetail = () => {
@@ -22,7 +23,7 @@ const ProductDetail = () => {
     return (
         <div className='min-h-screen bg-linear-to-br from-[#e9f7ef] px-3'>
             <div className='max-w-7xl mx-auto'>
-                <div className='grid grid-cols-1 md:grid-cols-2  items-center gap-10 pt-6'>
+                <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-10 pt-6'>
                     <div className='order-2 md:order-1'>
                         <div className='flex gap-1 items-center'>
                             <Link to="/" className='text-[#1c9d36] text-sm font-semibold'>Home</Link>
@@ -69,9 +70,8 @@ const ProductDetail = () => {
                             <button className='text-white bg-[#1c9d36] px-8 py-1 rounded text-lg'>Enquiry Now</button>
                         </div>
                     </div>
-                    <div className='order-1 md:order-2 h-full md:shadow flex justify-center'>
-                        <img src="/assets/product-detail-images/uniblocker-2.jpeg"
-                            className='w-[50%] md:w-full h-60 sm:h-80 md:h-120' />
+                    <div className='order-1 md:order-2 h-full md:shadow flex justify-center md:block'>
+                        <ImageSlider />
                     </div>
                 </div>
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 justify-center items-center mt-10 bg-[#eeffff] shadow p-2 md:p-5'>

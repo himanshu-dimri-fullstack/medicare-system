@@ -6,6 +6,7 @@ import { AiFillSafetyCertificate } from "react-icons/ai";
 import AboutSection from "../components/AboutSection";
 import EnquirySection from "../components/EnquitySection";
 import FeaturedProducts from "../components/FeaturedProducts";
+import FeaturedProductSlider from "../components/FeaturedProductSlider";
 
 const HomePage = () => {
     return (
@@ -63,7 +64,8 @@ const HomePage = () => {
                         <span className="text-[#1c9d36]">Products</span>
                     </h2>
 
-                    <FeaturedProducts />
+                    {/* <FeaturedProducts /> */}
+                    <FeaturedProductSlider />
                 </div>
                 <AboutSection />
                 <EnquirySection />
