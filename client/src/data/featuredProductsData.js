@@ -23,4 +23,10 @@ export const data = [
         desc: "Surgical positioning and pressure care devices are foundational tools in the modern operating theatre.",
         image: "/assets/featuredProducts/pressure-care.jpeg",
     },
+    {
+        id: 5,
+        name: "Cold & Compression Therapy System",
+        desc: "Advanced cold and compression therapy system combining active cryotherapy and intermittent compression to support orthopaedic rehabilitation, post-operative recovery, injury recovery, and joint replacement rehabilitation.",
+        image: "/assets/featuredProducts/cold-compression.webp",
+    },
 ]

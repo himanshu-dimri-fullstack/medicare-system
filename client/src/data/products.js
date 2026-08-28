@@ -2,7 +2,7 @@ export const categories = [
     {
         name: "Emergency & Critical Care",
         image: "/assets/product-category/Emergency-Critical-Care.png",
-        shortDesc: "Explore reliable emergency and critical care equipment designed for intensive care units, emergency rooms, and life-support applications. Find quality ICU monitors, ventilators, defibrillators, infusion pumps, and other essential critical-care solutions.",
+        shortDesc: "Reliable emergency and critical care equipment including ICU monitors, ventilators, defibrillators, and infusion pumps for hospitals and critical-care units.",
         subProducts: [
             "Defibrillator",
             "Multiparameter Monitors",
@@ -15,7 +15,7 @@ export const categories = [
     {
         name: "Respiratory Care",
         image: "/assets/product-category/Respiratory-Care.png",
-        shortDesc: "Find dependable respiratory care equipment for hospitals, clinics, and patient-care environments. Our range includes ventilators, oxygen concentrators, CPAP/BiPAP systems, nebulizers, and other respiratory support solutions.",
+        shortDesc: "Professional respiratory care equipment including ventilators, oxygen concentrators, CPAP/BiPAP machines, and nebulizers for effective respiratory support.",
         subProducts: [
             "Oxygen Concentrator",
             "Spirometry",
@@ -26,7 +26,7 @@ export const categories = [
     },
     {
         name: "Anaesthesia & OT",
-        shortDesc: "Explore dependable anaesthesia and operation theatre equipment designed for safe and efficient surgical procedures. Our range includes anaesthesia machines, operating tables, patient monitors, surgical lights, and essential OT equipment.",
+        shortDesc: "Complete anaesthesia and operation theatre equipment, including anaesthesia machines, surgical tables, OT lights, and patient monitoring systems.",
         image: "/assets/product-category/Anaesthesia-OT.png",
         subProducts: [
             "Anaesthesia Workstation",
@@ -39,7 +39,7 @@ export const categories = [
     {
         name: "Diagnostics & Monitoring",
         image: "/assets/product-category/Diagnostics-Monitoring.png",
-        shortDesc: "Discover advanced diagnostic and patient monitoring equipment for accurate, efficient healthcare assessment. Our range includes patient monitors, ECG machines, pulse oximeters, and other reliable medical monitoring solutions.",
+        shortDesc: "Advanced diagnostic and patient monitoring equipment, including ECG machines, patient monitors, pulse oximeters, and vital-sign monitoring solutions.",
         subProducts: [
             "T.M.T Machine",
             "Ambulatory Blood Pressure Monitor",
@@ -51,7 +51,7 @@ export const categories = [
     {
         name: "Imaging & Radiology",
         image: "/assets/product-category/Imaging-Radiology.png",
-        shortDesc: "Explore modern medical imaging and radiology equipment designed to support accurate diagnosis and clinical decision-making. Discover ultrasound systems, X-ray equipment, CT solutions, and other diagnostic imaging technologies.",
+        shortDesc: "Advanced imaging and radiology equipment including ultrasound, X-ray, CT, and diagnostic imaging solutions for accurate clinical diagnosis.",
         subProducts: [
             "X-Ray Machine",
             "C-Arm",
@@ -61,7 +61,7 @@ export const categories = [
     {
         name: "Neonatal & Paediatric Care",
         image: "/assets/product-category/Neonatal-Paediatric-Care.png",
-        shortDesc: "Find specialised neonatal and paediatric medical equipment designed to support the care and monitoring of newborns and children. Explore neonatal incubators, infant warmers, phototherapy units, monitors, and other paediatric-care solutions.",
+        shortDesc: "Specialised neonatal and paediatric equipment including incubators, infant warmers, phototherapy units, and monitoring systems for newborn and child care.",
         subProducts: [
             "Premia",
             "Fetal Doppler",
@@ -78,7 +78,7 @@ export const categories = [
     {
         name: "Gynaecology",
         image: "/assets/product-category/Gynaecology.png",
-        shortDesc: "Browse professional gynaecology equipment designed to support women's healthcare, examination, diagnosis, and monitoring. Explore reliable ultrasound systems, fetal monitors, examination equipment, and other specialised solutions.",
+        shortDesc: "Quality gynaecology equipment for women's healthcare, including ultrasound systems, fetal monitors, examination equipment, and diagnostic solutions.",
         subProducts: [
             "Cryosurgical Unit",
         ]
@@ -86,7 +86,7 @@ export const categories = [
     {
         name: "Orthopaedics & Rehabilitation",
         image: "/assets/product-category/Orthopaedics-Rehabilitation.png",
-        shortDesc: "Discover quality orthopaedic and rehabilitation equipment designed to support patient recovery, physiotherapy, mobility, and rehabilitation care. Explore professional solutions for hospitals, clinics, and rehabilitation centres.",
+        shortDesc: "Reliable orthopaedic and rehabilitation equipment for physiotherapy, mobility support, recovery, and patient rehabilitation in hospitals and clinics.",
         subProducts: [
             "Rehabilitation Products",
         ]
@@ -94,7 +94,7 @@ export const categories = [
     {
         name: "Surgical Instruments & Equipment",
         image: "/assets/product-category/Surgical-Instruments-Equipment.png",
-        shortDesc: "Browse high-quality surgical instruments and medical equipment designed for precision and reliable performance in operating theatres. Explore surgical forceps, scissors, retractors, clamps, needle holders, and other essential surgical instruments.",
+        shortDesc: "Precision surgical instruments and equipment including forceps, scissors, retractors, clamps, and essential OT instruments for professional surgical procedures.",
         subProducts: [
             "Electrosurgical Unit",
             "Endoscope / Laparoscope",

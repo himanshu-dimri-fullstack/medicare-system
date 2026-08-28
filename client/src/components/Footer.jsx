@@ -24,8 +24,7 @@ const Footer = () => {
                         Medicare System
                     </h2>
                     <p className="text-sm leading-relaxed w-[80%]">
-                        Providing trusted medical equipment and technical solutions since 2008.
-                        We deliver quality, safety, and innovation for healthcare needs.
+                        Providing trusted medical equipment and healthcare solutions since 2008, we serve hospitals, clinics, and healthcare professionals with reliable products and technical support. We are committed to delivering quality medical equipment, dependable service, safety, and innovative healthcare solutions.
                     </p>
                 </div>
 
@@ -57,16 +56,8 @@ const Footer = () => {
                     <ul className="space-y-3 text-sm">
                         <li className="flex items-center gap-3">
                             <FaPhoneAlt className="text-[#1c9d36]" />
-                            +91-11-65176883
+                            +91-11-41104977
                         </li>
-                        <li className="flex items-center gap-3">
-                            <FaFax className="text-[#1c9d36]" />
-                            +91-11-45651434
-                        </li>
-                        {/* <li className="flex items-center gap-3">
-                            <FaEnvelope className="text-[#1c9d36]" />
-                            info@medicaresystem.in
-                        </li> */}
                     </ul>
                     <div className="space-y-2 text-sm mt-4">
                         <h6 className="text-md font-semibold">Office Address</h6>
@@ -78,7 +69,7 @@ const Footer = () => {
 
             </div>
 
-            <div className="border-t border-gray-700 mt-6 pt-4 text-center text-sm text-gray-400">
+            <div className="border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
                 <p> © {new Date().getFullYear()} Medicare System Inc. All rights reserved.</p>
             </div>
         </footer>
