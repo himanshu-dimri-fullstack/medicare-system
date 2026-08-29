@@ -3,30 +3,22 @@ import { FaAngleRight } from "react-icons/fa6";
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaDownload } from "react-icons/fa";
 
-const ImageSlider = () => {
+const ImageSlider = ({ data }) => {
     const [state, setState] = useState(0);
     const [isHovered, setIsHovered] = useState(false)
 
-    const data = [
-        { id: 1, src: "/assets/product-detail-images/uniblocker/uniblocker-3.jpeg" },
-        { id: 2, src: "/assets/product-detail-images/uniblocker/uniblocker-2.jpeg" },
-        { id: 3, src: "/assets/product-detail-images/uniblocker/uniblocker-4.jpeg" },
-        { id: 4, src: "/assets/product-detail-images/uniblocker/uniblocker-5.png" },
-        { id: 5, src: "/assets/product-detail-images/uniblocker/uniblocker-6.png" },
-    ];
-
     const handlePrev = () => {
-        setState((prev) => (prev === 0 ? data.length - 1 : prev - 1));
+        setState((prev) => (prev === 0 ? data?.length - 1 : prev - 1));
     };
 
     const handleNext = () => {
-        setState((prev) => (prev === data.length - 1 ? 0 : prev + 1));
+        setState((prev) => (prev === data?.length - 1 ? 0 : prev + 1));
     };
 
     useEffect(() => {
         if (isHovered) return;
         const interval = setInterval(() => {
-            setState((prev) => prev === data.length - 1 ? 0 : prev + 1)
+            setState((prev) => prev === data?.length - 1 ? 0 : prev + 1)
         }, 3000)
         return () => clearInterval(interval)
     }, [isHovered])
@@ -42,12 +34,12 @@ const ImageSlider = () => {
                     className="flex transition-transform duration-500 ease-out-in"
                     style={{ transform: `translateX(-${state * 100}%)` }}
                 >
-                    {data.map((item) => (
-                        <div key={item.id} className="w-full shrink-0">
+                    {data?.map((item, i) => (
+                        <div key={i} className="w-full shrink-0">
                             <img
-                                src={item.src}
-                                alt={`Slide ${item.id}`}
-                                className="w-full h-60 sm:h-80 md:h-120"
+                                src={item}
+                                alt={`Slide ${i}`}
+                                className="w-full h-60 sm:h-80 md:h-120 object-contain"
                             />
                         </div>
                     ))}

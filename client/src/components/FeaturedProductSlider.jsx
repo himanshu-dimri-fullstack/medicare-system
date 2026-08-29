@@ -33,7 +33,6 @@ const FeaturedProductSlider = () => {
         };
 
         handleResize();
-
         window.addEventListener("resize", handleResize);
 
         return () => window.removeEventListener("resize", handleResize);
@@ -41,7 +40,7 @@ const FeaturedProductSlider = () => {
 
 
     useEffect(() => {
-        if (isHovered || data.length <= visibleCards) return;
+        if (isHovered) return;
 
         const interval = setInterval(() => {
             setState((prev) =>
@@ -50,7 +49,7 @@ const FeaturedProductSlider = () => {
         }, 3000);
 
         return () => clearInterval(interval);
-    }, [isHovered, visibleCards, maxIndex]);
+    }, [isHovered, maxIndex, visibleCards]);
 
     return (
         <div className="max-w-7xl mx-auto relative overflow-hidden" onMouseEnter={() => setIsHovered(true)}
@@ -60,7 +59,7 @@ const FeaturedProductSlider = () => {
                 {
                     data.map((item) => {
                         return (
-                            <Link to="/products/anaesthesia/uniblocker" key={item.id} className='w-full sm:w-1/2 lg:w-1/4 shrink-0 cursor-pointer group bg-white hover:bg-[#1c9d36] hover:text-white rounded shadow 
+                            <Link to={`/products/${item.categorySlug}/${item.slug}`} key={item.id} className='w-full sm:w-1/2 lg:w-1/4 shrink-0 cursor-pointer group bg-white hover:bg-[#1c9d36] hover:text-white rounded shadow 
                              hover:shadow-[0_4px_15px_rgba(28,157,54,0.35)] p-4'>
                                 <div className='flex justify-center'>
                                     <img src={item.image} className='h-25 md:h-30 lg:h-40' />
