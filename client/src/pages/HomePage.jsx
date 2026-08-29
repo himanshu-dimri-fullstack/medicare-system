@@ -4,7 +4,7 @@ import { FaRegThumbsUp } from "react-icons/fa";
 import { AiFillSafetyCertificate } from "react-icons/ai";
 // import ProductsSlider from "../components/ProductsSlider";
 import AboutSection from "../components/AboutSection";
-import EnquirySection from "../components/EnquitySection";
+import EnquirySection from "../components/EnquirySection";
 import FeaturedProducts from "../components/FeaturedProducts";
 import FeaturedProductSlider from "../components/FeaturedProductSlider";
 

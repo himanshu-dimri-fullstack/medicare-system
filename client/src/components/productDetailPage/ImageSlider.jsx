@@ -3,7 +3,7 @@ import { FaAngleRight } from "react-icons/fa6";
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaDownload } from "react-icons/fa";
 
-const ImageSlider = ({ data }) => {
+const ImageSlider = ({ data, brochure, downloadPDF }) => {
     const [state, setState] = useState(0);
     const [isHovered, setIsHovered] = useState(false)
 
@@ -15,17 +15,18 @@ const ImageSlider = ({ data }) => {
         setState((prev) => (prev === data?.length - 1 ? 0 : prev + 1));
     };
 
-    useEffect(() => {
-        if (isHovered) return;
-        const interval = setInterval(() => {
-            setState((prev) => prev === data?.length - 1 ? 0 : prev + 1)
-        }, 3000)
-        return () => clearInterval(interval)
-    }, [isHovered])
+    // useEffect(() => {
+    //     if (isHovered) return;
+    //     const interval = setInterval(() => {
+    //         setState((prev) => prev === data?.length - 1 ? 0 : prev + 1)
+    //     }, 3000)
+    //     return () => clearInterval(interval)
+    // }, [isHovered])
+
 
     return (
 
-        <div className="relative w-[80%] sm:w-[60%] md:w-full overflow-hidden rounded-lg"
+        <div className="relative w-[80%] sm:w-[60%] md:w-full overflow-hidden rounded-lg flex items-center"
             onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
 
             <div className="w-full border-[#eee]">
@@ -39,7 +40,7 @@ const ImageSlider = ({ data }) => {
                             <img
                                 src={item}
                                 alt={`Slide ${i}`}
-                                className="w-full h-60 sm:h-80 md:h-120 object-contain"
+                                className="w-full h-60 sm:h-80 md:h-100 object-contain"
                             />
                         </div>
                     ))}
@@ -65,7 +66,7 @@ const ImageSlider = ({ data }) => {
             </div>
 
             <div className="absolute top-[3%] left-[3%]">
-                <button className="hover:bg-[#1c9d36] hover:text-white flex gap-2 items-center border border-[#1c9d36] text-[#1c9d36] bg-white rounded-2xl px-3 py-1"><FaDownload /> <span>Brochure</span></button>
+                <button onClick={() => downloadPDF(brochure)} className="hover:bg-[#1c9d36] hover:text-white flex gap-2 items-center border border-[#1c9d36] text-[#1c9d36] bg-white rounded-2xl px-3 py-1"><FaDownload /> <span>Brochure</span></button>
             </div>
         </div>
     );

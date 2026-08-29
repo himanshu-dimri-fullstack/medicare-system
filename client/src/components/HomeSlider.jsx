@@ -42,7 +42,7 @@ const HomeSlider = () => {
                     data.map((item) => {
                         return (
                             <div key={item.id} className="w-full shrink-0">
-                                <img src={item.src} className="w-full h-60 sm:h-75 md:h-120 object-fill object-[center_20%] border-[#eee]" />
+                                <img src={item.src} className="w-full h-75 md:h-120 object-fill object-[center_20%] border-[#eee]" />
                             </div>
                         )
                     })
