@@ -117,7 +117,7 @@ Looking forward to your response. Thanks!`;
                             product?.keyInformation?.map((item, i) => {
                                 return (
                                     <div key={i} className='flex gap-4 items-center'>
-                                        <div className='text-2xl lg:text-4xl text-[#1c9d36]'>
+                                        <div className='text-lg lg:text-2xl text-[#1c9d36]'>
                                             <FaRegStar className='stroke-[10.5]' />
                                         </div>
                                         <div>

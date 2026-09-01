@@ -7,7 +7,7 @@ const ServicePage = () => {
     return (
         <div className="w-full min-h-screen bg-linear-to-br from-[#e9f7ef] to-white">
 
-            <section className="max-w-7xl mx-auto px-6 py-16 text-center">
+            <section className="max-w-7xl mx-auto px-6 py-6 text-center">
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
                     Premium <span className="text-[#1c9d36]">Medicare Services</span>
                 </h1>
@@ -17,7 +17,7 @@ const ServicePage = () => {
                 </p>
             </section>
 
-            <section className="max-w-6xl mx-auto px-6 py-10">
+            <section className="max-w-6xl mx-auto px-6 py-6">
                 <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 space-y-6">
 
                     <p className="text-gray-600 leading-relaxed">
@@ -38,7 +38,7 @@ const ServicePage = () => {
                 </div>
             </section>
 
-            <section className="max-w-7xl mx-auto px-6 py-14">
+            <section className="max-w-7xl mx-auto px-6 py-6">
                 <h2 className="text-3xl font-semibold text-center text-gray-800 mb-10">
                     What We Offer
                 </h2>
@@ -72,8 +72,8 @@ const ServicePage = () => {
                 </div>
             </section>
 
-            <section className="max-w-6xl mx-auto px-6 py-10">
-                <div className="bg-[#f4fbf6] rounded-2xl p-8 md:p-12">
+            <section className="max-w-6xl mx-auto px-6 py-6">
+                <div className="bg-[#f4fbf6] rounded-2xl p-8 md:px-12 md:py-6">
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                         Our Product Coverage
                     </h2>
@@ -85,7 +85,7 @@ const ServicePage = () => {
                 </div>
             </section>
 
-            <section className="max-w-5xl mx-auto px-6 py-16 text-center">
+            <section className="max-w-5xl mx-auto p-6 text-center">
                 <div className="bg-[#1c9d36] text-white rounded-2xl p-10 shadow-lg">
                     <h2 className="text-3xl font-semibold mb-4">
                         Need a Custom Service Plan?

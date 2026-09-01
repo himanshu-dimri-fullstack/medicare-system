@@ -6,12 +6,12 @@ const AboutPage = () => {
 
             {/* Header */}
             <div className="max-w-6xl mx-auto text-center mb-14">
-                <h1 className="text-4xl md:text-5xl font-bold text-[#1c9d36] mb-4">
+                <div className="text-4xl md:text-5xl font-bold text-[#1c9d36] mb-4">
                     About Us
-                </h1>
-                <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+                </div>
+                <h1 className="text-gray-600 text-lg max-w-3xl mx-auto">
                     Delivering intelligent healthcare and technical solutions since 2008
-                </p>
+                </h1>
             </div>
 
             {/* Main Content Card */}
