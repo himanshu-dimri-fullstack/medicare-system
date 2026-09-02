@@ -1,10 +1,15 @@
-import React from 'react'
-import Navbar from './Navbar'
+import React, { useState } from 'react'
 import Sidebar from './Sidebar'
-import { Outlet } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 import { IoIosArrowDown } from "react-icons/io";
 
 const AdminLayout = () => {
+
+    const [open, setOpen] = useState(false)
+
+    const handleClick = () => {
+        setOpen((prev) => !prev)
+    }
     return (
         <>
             <div className='relative grid grid-cols-6 bg-linear-to-br from-[#e9f7ef] to-white'>
@@ -13,13 +18,19 @@ const AdminLayout = () => {
                 </div>
                 <div className='col-span-5'>
                     <div className='flex justify-end mt-5 mr-10 cursor-pointer'>
-                        <div className='flex gap-3 items-center bg-[#0f172a] p-2 rounded-lg'>
-                            <div className='flex justify-center items-center h-10 w-10 rounded-[50%] bg-[#1c9d36] backdrop-blur-2xl'>
-                                <span className='text-xl font-semibold text-white'>A</span>
-                            </div>
-                            <span className='text-white'>Admin</span>
-                            <div className='text-xl text-white'>
-                                <IoIosArrowDown />
+                        <div className='relative'>
+                            <button onClick={handleClick} className='flex gap-3 items-center bg-[#0f172a] p-2 rounded-lg'>
+                                <div className='flex justify-center items-center h-10 w-10 rounded-[50%] bg-[#1c9d36] backdrop-blur-2xl'>
+                                    <span className='text-xl font-semibold text-white'>A</span>
+                                </div>
+                                <span className='text-white text-sm'>Admin</span>
+                                <div className={`text-xl text-white ${open ? "rotate-180" : ""}`}>
+                                    <IoIosArrowDown />
+                                </div>
+                            </button>
+                            <div className={`z-999 absolute top-15 right-0 w-full text-center bg-white shadow
+                                transition-all duration-1000 ease-in-out ${open ? "block opacity-100" : "hidden opacity:0"}`}>
+                                <Link to="/" className='text-white px-3 py-1 rounded bg-[#1c9d36] my-5 inline-block'>Logout</Link>
                             </div>
                         </div>
                     </div>

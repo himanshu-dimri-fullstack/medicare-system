@@ -68,7 +68,6 @@ const Footer = () => {
                 </div>
 
             </div>
-
             <div className="border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
                 <p> © {new Date().getFullYear()} Medicare System Inc. All rights reserved.</p>
             </div>
