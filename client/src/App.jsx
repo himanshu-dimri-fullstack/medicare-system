@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom"
 import { lazy, Suspense } from 'react'
 import Fallback from './components/Fallback'
 import UserLayout from './components/UserLayout'
+import SubcategoryLayout from './admin/subcategory/SubcategoryLayout'
 const HomePage = lazy(() => import("./pages/HomePage"))
 const AboutPage = lazy(() => import("./pages/AboutPage"))
 const ContactPage = lazy(() => import("./pages/ContactPage"))
@@ -11,10 +12,13 @@ const ServicePage = lazy(() => import("./pages/ServicePage"))
 const ProductDetail = lazy(() => import("./pages/ProductDetail"))
 const Dashboard = lazy(() => import("./admin/AdminDashboard"))
 const AdminLayout = lazy(() => import("./admin/components/AdminLayout"))
-const Layout = lazy(() => import("./admin/category/Layout"))
-const Show = lazy(() => import("./admin/category/Show"))
-const Edit = lazy(() => import("./admin/category/Edit"))
-const Add = lazy(() => import("./admin/category/Add"))
+const CategoryLayout = lazy(() => import("./admin/category/CategoryLayout"))
+const CategoryShow = lazy(() => import("./admin/category/Show"))
+const CategoryEdit = lazy(() => import("./admin/category/Edit"))
+const CategoryAdd = lazy(() => import("./admin/category/Add"))
+const SubcategoryShow = lazy(() => import("./admin/subcategory/Show"))
+const SubcategoryAdd = lazy(() => import("./admin/subcategory/Edit"))
+const SubcategoryEdit = lazy(() => import("./admin/subcategory/Add"))
 
 const App = () => {
   return (
@@ -31,10 +35,15 @@ const App = () => {
           </Route>
           <Route element={<AdminLayout />}>
             <Route path="/admin/dashboard" element={<Dashboard />} />
-            <Route element={<Layout />}>
-              <Route path="/admin/category" element={<Show />} />
-              <Route path="/admin/category/add" element={<Add />} />
-              <Route path="/admin/category/edit" element={<Edit />} />
+            <Route element={<CategoryLayout />}>
+              <Route path="/admin/category" element={<CategoryShow />} />
+              <Route path="/admin/category/add" element={<CategoryAdd />} />
+              <Route path="/admin/category/edit" element={<CategoryEdit />} />
+            </Route>
+            <Route element={<SubcategoryLayout />}>
+              <Route path="/admin/subcategory" element={<SubcategoryShow />} />
+              <Route path="/admin/subcategory/add" element={<SubcategoryAdd />} />
+              <Route path="/admin/subcategory/edit" element={<SubcategoryEdit />} />
             </Route>
           </Route>
         </Routes>

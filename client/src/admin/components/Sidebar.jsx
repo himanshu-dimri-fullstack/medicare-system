@@ -15,9 +15,9 @@ const Sidebar = () => {
                 <li><NavLink to="/admin/category"
                     className={({ isActive }) => `w-full hover:bg-[#1c9d36] text-white px-4 py-2 text-sm lg:text-md inline-block rounded-r-2xl 
                     ${isActive ? "bg-[#1c9d36]" : "bg-transparent text-black"}`}>Categories</NavLink></li>
-                <li><NavLink to="/admin/category"
+                <li><NavLink to="/admin/subcategory"
                     className={({ isActive }) => `w-full hover:bg-[#1c9d36] text-white px-4 py-2 text-sm lg:text-md inline-block rounded-r-2xl 
-                   `}>Subcategories</NavLink></li>
+                   ${isActive ? "bg-[#1c9d36]" : "bg-transparent text-black"}`}>Subcategories</NavLink></li>
                 <li><NavLink to="/admin/category"
                     className={({ isActive }) => `w-full hover:bg-[#1c9d36] text-white px-4 py-2 text-sm lg:text-md inline-block rounded-r-2xl 
                    `}>Products</NavLink></li>

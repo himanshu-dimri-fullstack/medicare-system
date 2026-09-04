@@ -1,10 +1,10 @@
 import React from 'react'
-import CategoryForm from '../components/CategoryForm'
+import SubcategoryForm from '../components/SubcategoryForm'
 
 const Edit = () => {
     return (
         <div className='flex justify-center py-10'>
-            <CategoryForm />
+            <SubcategoryForm />
         </div>
     )
 }
