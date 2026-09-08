@@ -12,11 +12,11 @@ const AdminLayout = () => {
     }
     return (
         <>
-            <div className='relative grid grid-cols-6 bg-linear-to-br from-[#e9f7ef] to-white'>
-                <div>
+            <div className='h-screen overflow-hidden relative grid grid-cols-6 bg-linear-to-br from-[#e9f7ef] to-white'>
+                <div className=''>
                     <Sidebar />
                 </div>
-                <div className='col-span-5'>
+                <div className='col-span-5 min-h-0 flex flex-col'>
                     <div className='flex justify-end mt-5 mr-10 cursor-pointer'>
                         <div className='relative'>
                             <button onClick={handleClick} className='flex gap-3 items-center bg-[#0f172a] p-2 rounded-lg'>
@@ -34,7 +34,7 @@ const AdminLayout = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='p-10'>
+                    <div className='flex-1 min-h-0 overflow-y-auto p-10'>
                         <Outlet />
                     </div>
                 </div>

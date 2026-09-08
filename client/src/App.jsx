@@ -4,6 +4,7 @@ import { lazy, Suspense } from 'react'
 import Fallback from './components/Fallback'
 import UserLayout from './components/UserLayout'
 import SubcategoryLayout from './admin/subcategory/SubcategoryLayout'
+import ProductLayout from './admin/products/ProductLayout'
 const HomePage = lazy(() => import("./pages/HomePage"))
 const AboutPage = lazy(() => import("./pages/AboutPage"))
 const ContactPage = lazy(() => import("./pages/ContactPage"))
@@ -19,6 +20,9 @@ const CategoryAdd = lazy(() => import("./admin/category/Add"))
 const SubcategoryShow = lazy(() => import("./admin/subcategory/Show"))
 const SubcategoryAdd = lazy(() => import("./admin/subcategory/Edit"))
 const SubcategoryEdit = lazy(() => import("./admin/subcategory/Add"))
+const ProductShow = lazy(() => import("./admin/products/Show"))
+const ProductEdit = lazy(() => import("./admin/products/Edit"))
+const ProductAdd = lazy(() => import("./admin/products/Add"))
 
 const App = () => {
   return (
@@ -44,6 +48,11 @@ const App = () => {
               <Route path="/admin/subcategory" element={<SubcategoryShow />} />
               <Route path="/admin/subcategory/add" element={<SubcategoryAdd />} />
               <Route path="/admin/subcategory/edit" element={<SubcategoryEdit />} />
+            </Route>
+            <Route element={<ProductLayout />}>
+              <Route path="/admin/product" element={<ProductShow />} />
+              <Route path="/admin/product/add" element={<ProductAdd />} />
+              <Route path="/admin/product/edit" element={<ProductEdit />} />
             </Route>
           </Route>
         </Routes>
