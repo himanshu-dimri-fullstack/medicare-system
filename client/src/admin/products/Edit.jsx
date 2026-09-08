@@ -1,8 +1,11 @@
 import React from 'react'
+import ProductForm from '../components/ProductForm'
 
 const Edit = () => {
     return (
-        <div>Edit</div>
+        <div className='flex justify-center py-10'>
+            <ProductForm />
+        </div>
     )
 }
 

@@ -3,7 +3,7 @@ import { NavLink, Outlet } from 'react-router-dom'
 
 const SubcategoryLayout = () => {
     return (
-        <div className='bg-white shadow'>
+        <div className='bg-white shadow h-full overflow-hidden flex flex-col'>
             <div>
                 <ul className='flex gap-10 bg-white justify-center py-6'>
                     <li><NavLink to="/admin/subcategory/add" className={({ isActive }) => `hover:bg-[#1c9d36] hover:text-white p-2 rounded shadow ${isActive ? "bg-[#1c9d36] text-white"
@@ -12,7 +12,7 @@ const SubcategoryLayout = () => {
                         : "bg-transparent border border-[#1c9d36] text-[#1c9d36]"}`}>Edit Subcategory</NavLink></li>
                 </ul>
             </div>
-            <div>
+            <div className='flex-1 overflow-y-auto'>
                 <Outlet />
             </div>
         </div>

@@ -17,7 +17,7 @@ const AdminLayout = () => {
                     <Sidebar />
                 </div>
                 <div className='col-span-5 min-h-0 flex flex-col'>
-                    <div className='flex justify-end mt-5 mr-10 cursor-pointer'>
+                    <div className='flex justify-end my-3 mr-10 cursor-pointer'>
                         <div className='relative'>
                             <button onClick={handleClick} className='flex gap-3 items-center bg-[#0f172a] p-2 rounded-lg'>
                                 <div className='flex justify-center items-center h-10 w-10 rounded-[50%] bg-[#1c9d36] backdrop-blur-2xl'>
@@ -34,7 +34,7 @@ const AdminLayout = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex-1 min-h-0 overflow-y-auto p-10'>
+                    <div className='flex-1 overflow-y-auto pl-10 pr-10 pb-10'>
                         <Outlet />
                     </div>
                 </div>
