@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { IoClose } from "react-icons/io5";
 
 const ProductForm = () => {
 
@@ -6,6 +7,7 @@ const ProductForm = () => {
     const [information, setinformation] = useState([""])
     const [benefits, setbenefits] = useState([""])
     const [specifications, setSpecifications] = useState([""])
+    const [images, setImages] = useState([])
 
     const handleHighlights = () => {
         setHighlights((prev) => [...prev, ""])
@@ -22,6 +24,19 @@ const ProductForm = () => {
     const handleSpecifications = () => {
         setSpecifications((prev) => [...prev, ""])
     }
+
+    const handleMultipleImages = (e) => {
+        const images = Array.from(e.target.files)
+        setImages(images)
+    }
+
+    const handlePreviewRemove = (index) => {
+        const filtered = images.filter((_, i) => {
+            return i !== index
+        })
+        setImages(filtered);
+    }
+
     return (
         <form className='w-[50%] text-gray-600'>
 
@@ -122,7 +137,7 @@ const ProductForm = () => {
                 {
                     specifications.map((_, i) => {
                         return (
-                            <div className='mt-2'>
+                            <div key={i} className='mt-2'>
                                 <div>
                                     <span className='text-[#1c9d36] text-sm font-semibold'>Head</span>
                                     <input type='text' className='focus:border-[#1c9d36] outline-none p-1 my-1 border border-[#ccc] w-full' />
@@ -150,7 +165,22 @@ const ProductForm = () => {
 
             <div className='mb-3'>
                 <label className='font-semibold'>Images</label><br />
-                <input type='file' className='focus:border-[#1c9d36] outline-none p-1 mt-1 border border-[#ccc] w-full' />
+                <input onChange={handleMultipleImages} type='file' multiple className='focus:border-[#1c9d36] outline-none p-1 mt-1 border border-[#ccc] w-full' />
+                <div className='mt-5 flex gap-2'>
+                    {
+                        images.map((image, i) => {
+                            return (
+                                <div key={i} className='relative'>
+                                    <img key={i} src={URL.createObjectURL(image)}
+                                        className='h-20 w-20' />
+                                    <button type='button' onClick={() => handlePreviewRemove(i)} className='absolute top-[2%] right-[2%] bg-red-500 rounded-[50%] p-1'>
+                                        <IoClose className='text-sm text-white' />
+                                    </button>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </div>
 
             <div>
