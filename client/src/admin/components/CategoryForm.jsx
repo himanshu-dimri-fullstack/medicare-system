@@ -2,7 +2,7 @@ import React from 'react'
 
 const CategoryForm = () => {
     return (
-        <form className='w-[50%] text-gray-600'>
+        <form className='md:w-[75%] lg:w-[50%] text-gray-600'>
             <div className='mb-3'>
                 <label className='font-semibold'>Category Name</label><br />
                 <input type='text' className='focus:border-[#1c9d36] outline-none p-1 mt-1 border border-[#ccc] w-full' />

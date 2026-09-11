@@ -1,14 +1,16 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-const Sidebar = () => {
+const Sidebar = ({ setOpenMenu }) => {
+
+
     return (
-        <div className='h-screen bg-[#0f172a] shadow-5xl flex flex-col rounded-r-4xl'>
-            <div className='mt-5 ml-2'>
-                <img src="/assets/logo2.png" className='h-12 w-18' />
+        <div className='h-screen bg-[#0f172a] shadow-5xl flex flex-col md:rounded-r-4xl'>
+            <Link to="/" className='mt-5 ml-2'>
+                <img src="/assets/logo2.png" className='h-8 w-12 md:h-10 md:w-14' />
                 <p className='text-xs md:text-sm text-[#1c9d36] font-semibold mt-2'>Medicare System</p>
-            </div>
-            <ul className='pt-10 flex flex-col gap-3 w-[80%]'>
+            </Link>
+            <ul className='hidden md:flex pt-10 flex-col gap-3 md:w-[85%] lg:w-[70%]'>
                 <li><NavLink to="/admin/dashboard"
                     className={({ isActive }) => `w-full hover:bg-[#1c9d36] text-white px-4 py-2 text-sm lg:text-md
                 rounded-r-2xl inline-block ${isActive ? "bg-[#1c9d36]" : "bg-transparent text-black"}`}>Dashboard</NavLink></li>
@@ -19,6 +21,20 @@ const Sidebar = () => {
                     className={({ isActive }) => `w-full hover:bg-[#1c9d36] text-white px-4 py-2 text-sm lg:text-md inline-block rounded-r-2xl 
                    ${isActive ? "bg-[#1c9d36]" : "bg-transparent text-black"}`}>Subcategories</NavLink></li>
                 <li><NavLink to="/admin/product"
+                    className={({ isActive }) => `w-full hover:bg-[#1c9d36] text-white px-4 py-2 text-sm lg:text-md inline-block rounded-r-2xl 
+                   ${isActive ? "bg-[#1c9d36]" : "bg-transparent text-black"} `}>Products</NavLink></li>
+            </ul>
+            <ul className='pt-10 flex flex-col md:hidden gap-3 w-[80%]'>
+                <li onClick={() => setOpenMenu(false)}><NavLink to="/admin/dashboard"
+                    className={({ isActive }) => `w-full hover:bg-[#1c9d36] text-white px-4 py-2 text-sm lg:text-md
+                rounded-r-2xl inline-block ${isActive ? "bg-[#1c9d36]" : "bg-transparent text-black"}`}>Dashboard</NavLink></li>
+                <li onClick={() => setOpenMenu(false)}><NavLink to="/admin/category"
+                    className={({ isActive }) => `w-full hover:bg-[#1c9d36] text-white px-4 py-2 text-sm lg:text-md inline-block rounded-r-2xl 
+                    ${isActive ? "bg-[#1c9d36]" : "bg-transparent text-black"}`}>Categories</NavLink></li>
+                <li onClick={() => setOpenMenu(false)}><NavLink to="/admin/subcategory"
+                    className={({ isActive }) => `w-full hover:bg-[#1c9d36] text-white px-4 py-2 text-sm lg:text-md inline-block rounded-r-2xl 
+                   ${isActive ? "bg-[#1c9d36]" : "bg-transparent text-black"}`}>Subcategories</NavLink></li>
+                <li onClick={() => setOpenMenu(false)}><NavLink to="/admin/product"
                     className={({ isActive }) => `w-full hover:bg-[#1c9d36] text-white px-4 py-2 text-sm lg:text-md inline-block rounded-r-2xl 
                    ${isActive ? "bg-[#1c9d36]" : "bg-transparent text-black"} `}>Products</NavLink></li>
             </ul>

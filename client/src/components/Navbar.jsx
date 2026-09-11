@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import { FiAlignJustify } from "react-icons/fi";
+import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -45,8 +47,8 @@ const Navbar = () => {
                     </ul>
 
                     <div className="md:hidden">
-                        <button onClick={() => setOpen(!open)} className="text-2xl">
-                            {open ? "✕" : "☰"}
+                        <button onClick={() => setOpen(!open)} className="text-4xl">
+                            {open ? <IoMdClose /> : <FiAlignJustify />}
                         </button>
                     </div>
 

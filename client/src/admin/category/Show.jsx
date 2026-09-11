@@ -3,9 +3,9 @@ import React from 'react'
 const Show = () => {
     return (
         <div>
-            <h2 className='text-2xl font-semibold text-center'>All Categories</h2>
-            <div className='flex justify-center px-5'>
-                <table className='w-full shadow mt-5'>
+            <h2 className='text-lg md:text-2xl font-semibold text-center'>All Categories</h2>
+            <div className='px-5 overflow-x-auto whitespace-nowrap'>
+                <table className='w-full shadow mt-5 text-sm md:text-md lg:text-lg'>
                     <thead className='text-center'>
                         <tr>
                             <th className='p-2 border border-[#ccc]'>Name</th>

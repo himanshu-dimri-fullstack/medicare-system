@@ -38,7 +38,7 @@ const ProductForm = () => {
     }
 
     return (
-        <form className='w-[50%] text-gray-600'>
+        <form className='w-full text-gray-600 px-5'>
 
             <div className='mb-3'>
                 <label className='font-semibold'>Choose Category</label>
@@ -92,12 +92,12 @@ const ProductForm = () => {
                 {
                     information.map((_, i) => {
                         return (
-                            <div key={i} className='mt-2'>
+                            <div key={i} className='grid grid-cols-1 md:grid-cols-3 gap-1 mt-2'>
                                 <div>
                                     <span className='text-[#1c9d36] text-sm font-semibold'>Head</span>
                                     <input type='text' className='focus:border-[#1c9d36] outline-none p-1 my-1 border border-[#ccc] w-full' />
                                 </div>
-                                <div className=''>
+                                <div className='md:col-span-2'>
                                     <span className='text-[#1c9d36] text-sm font-semibold'>Content</span>
                                     <input type='text' className='focus:border-[#1c9d36] outline-none p-1 mt-1 border border-[#ccc] w-full' />
                                 </div>
@@ -115,12 +115,12 @@ const ProductForm = () => {
                 {
                     benefits.map((_, i) => {
                         return (
-                            <div key={i} className='mt-2'>
+                            <div key={i} className='grid grid-cols-1 md:grid-cols-3 gap-1 mt-2'>
                                 <div>
                                     <span className='text-[#1c9d36] text-sm font-semibold'>Head</span>
                                     <input type='text' className='focus:border-[#1c9d36] outline-none p-1 my-1 border border-[#ccc] w-full' />
                                 </div>
-                                <div className=''>
+                                <div className='md:col-span-2'>
                                     <span className='text-[#1c9d36] text-sm font-semibold'>Content</span>
                                     <input type='text' className='focus:border-[#1c9d36] outline-none p-1 mt-1 border border-[#ccc] w-full' />
                                 </div>
@@ -137,12 +137,12 @@ const ProductForm = () => {
                 {
                     specifications.map((_, i) => {
                         return (
-                            <div key={i} className='mt-2'>
+                            <div key={i} className='grid grid-cols-1 md:grid-cols-3 gap-1 mt-2'>
                                 <div>
                                     <span className='text-[#1c9d36] text-sm font-semibold'>Head</span>
                                     <input type='text' className='focus:border-[#1c9d36] outline-none p-1 my-1 border border-[#ccc] w-full' />
                                 </div>
-                                <div className=''>
+                                <div className='md:col-span-2'>
                                     <span className='text-[#1c9d36] text-sm font-semibold'>Content</span>
                                     <input type='text' className='focus:border-[#1c9d36] outline-none p-1 mt-1 border border-[#ccc] w-full' />
                                 </div>
